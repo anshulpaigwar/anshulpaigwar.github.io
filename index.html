@@ -25,8 +25,7 @@
                   At Inria, I am supervised by Prof. <a href="https://scholar.google.com/citations?user=jtnM0c8AAAAJ&hl=en">Christian Laugier</a>,  
                   mainly focusing on developing robust and real-time perception systems for autonomous vehicles. I deal with large-scale data streams from RGB cameras, 
                   LiDARs, and Event-based cameras. I've worked on sensor fusion techniques for 2D and 3D object detection, semantic segmentation, depth estimation, 
-                  motion forecasting, occupancy grid prediction, collision risk estimation, simulations in CARLA and Gazebo, validation using SMC, and Formal methods, 
-                  localization, tracking, and many more applications.
+                  motion forecasting, occupancy grid prediction, collision risk estimation, simulations in CARLA and Gazebo, localization, tracking, and many more applications.
                                     
                   <!-- <a href="https://ai.googleblog.com/2020/12/portrait-light-enhancing-portrait.html">Portrait Light</a>, <a href="https://ai.googleblog.com/2014/04/lens-blur-in-new-google-camera-app.html">Lens Blur</a>, <a href="https://ai.googleblog.com/2014/10/hdr-low-light-and-high-dynamic-range.html">HDR+</a>, <a href="https://www.google.com/get/cardboard/jump/">Jump</a>, <a href="https://ai.googleblog.com/2017/10/portrait-mode-on-pixel-2-and-pixel-2-xl.html">Portrait Mode</a>, <a href="https://www.youtube.com/watch?v=JSnB06um5r4">Glass</a>, and <a href="https://www.matthewtancik.com/nerf">NeRF</a>. I did my PhD at <a href="http://www.eecs.berkeley.edu/">UC Berkeley</a>, where I was advised by <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a> and funded by the <a href="http://www.nsfgrfp.org/">NSF GRFP</a>. I've received the <a href="https://www2.eecs.berkeley.edu/Students/Awards/15/">C.V. Ramamoorthy Distinguished Research Award</a> and the <a href="https://www.thecvf.com/?page_id=413#YRA">PAMI Young Researcher Award</a>. -->
                 </p>
@@ -61,7 +60,8 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-                I'm interested in computer vision, machine learning, optimization, and image processing. Much of my research is about inferring the physical world (shape, motion, color, light, etc) from images. Representative papers are <span class="highlight">highlighted</span>.
+                I'm interested in computer vision, machine learning, and image processing. Much of my research is about inferring the 
+                dynamic environment around robot from images and point cloud. Representative papers are <span class="highlight">highlighted</span>.
               </p>
             </td>
           </tr>
@@ -102,11 +102,8 @@
               <strong>Anshul Paigwar</strong>,
               <a href="https://www.davidsgonzalez.com/">David Sierra-Gonzalez</a>,
               <a href="https://oerkent.gitlabpages.inria.fr/ozgurerkent/index.html">Özgür Erkent</a>,
-              <a href="https://scholar.google.com/citations?user=jtnM0c8AAAAJ&hl=en">Christian Laugier</a>,
-              <!-- <a href="https://scholar.google.com/citations?user=5mJUkI4AAAAJ&hl=en">Sabeek Pradhan</a>, <br>
-              <a href="https://bmild.github.io/">Ben Mildenhall</a>,
-              <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
-              <a href="https://sites.google.com/corp/view/kretzschmar/">Henrik Kretzschmar</a> -->
+              <a href="https://scholar.google.com/citations?user=jtnM0c8AAAAJ&hl=en">Christian Laugier</a>
+
               <br>
               <em>IEEE/CVF International Conference on Computer Vision (ICCV)</em>, 2021, Workshop on Autonomous Vehicle Vision
               <br>
@@ -123,6 +120,114 @@
               among top 5 </strong> approches for BEV pedestrian detection on KITTI Dataset.</p>
             </td>
           </tr>
+
+
+
+
+
+          <tr onmouseout="IROS20_stop()" onmouseover="IROS20_start()">
+            <td style="padding:20px;width:30%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='IROS20_video'><video width=100% height=100% muted autoplay loop>
+                    <source src="images/IROS20_video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video></div>
+                <img src='images/IROS20_still.png' width=100%>
+              </div>
+              <script type="text/javascript">
+                function IROS20_start() {
+                  document.getElementById('IROS20_video').style.opacity = "1";
+                }
+
+                function IROS20_stop() {
+                  document.getElementById('IROS20_video').style.opacity = "0";
+                }
+                IROS20_stop()
+              </script>
+            </td>
+          
+          
+            <td style="padding:20px;width:70%;vertical-align:middle">
+              <a href="https://hal.inria.fr/hal-02927350/">
+                <papertitle>GndNet: Fast Ground plane Estimation and Point Cloud Segmentation for Autonomous Vehicles
+                </papertitle>
+              </a>
+              <br>
+              <strong>Anshul Paigwar</strong>,
+              <a href="https://oerkent.gitlabpages.inria.fr/ozgurerkent/index.html">Özgür Erkent</a>,
+              <a href="https://www.davidsgonzalez.com/">David Sierra-Gonzalez</a>,
+              <a href="https://scholar.google.com/citations?user=jtnM0c8AAAAJ&hl=en">Christian Laugier</a>
+          
+              <br>
+              <em>IEEE International conference on Robotic Systems (IROS), 2020 </em> 
+              <br>
+              <a href="https://hal.inria.fr/hal-02927350/">pdf</a>
+              /
+              <a href="https://github.com/anshulpaigwar/GndNet">code</a>
+              /
+              <a href="https://www.youtube.com/watch?v=kjZ-n_aIJAg">presentation video</a>
+              /
+              <a href="https://www.youtube.com/watch?v=W_jXU-ewJR0&t">results video</a>
+              <p></p>
+              <p>GndNet uses PointNet and Pillar Feature Encoding network to extract features and regresses ground height for each cell
+              of the grid. GndNet establishes a new state-of-the-art, achieves a <strong>run-time of 55Hz </strong> for ground plane estimation and ground point
+              segmentation.</p>
+            </td>
+          </tr>
+
+
+
+          <tr onmouseout="CVPRW19_stop()" onmouseover="CVPRW19_start()">
+            <td style="padding:20px;width:30%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='CVPRW19_video'><video width=100% height=100% muted autoplay loop>
+                    <source src="images/CVPRW19_video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video></div>
+                <img src='images/CVPRW19_still.png' width=100%>
+              </div>
+              <script type="text/javascript">
+                function CVPRW19_start() {
+                  document.getElementById('CVPRW19_video').style.opacity = "1";
+                }
+
+                function CVPRW19_stop() {
+                  document.getElementById('CVPRW19_video').style.opacity = "0";
+                }
+                CVPRW19_stop()
+              </script>
+            </td>
+          
+          
+            <td style="padding:20px;width:70%;vertical-align:middle">
+              <a href="https://hal.inria.fr/hal-02156555">
+                <papertitle>Attentional PointNet for 3D-Object Detection in Point Clouds
+                </papertitle>
+              </a>
+              <br>
+              <strong>Anshul Paigwar</strong>,
+              <a href="https://oerkent.gitlabpages.inria.fr/ozgurerkent/index.html">Özgür Erkent</a>,
+              <a href="https://chriswolfvision.github.io/www/">Christian Wolf</a>,
+              <a href="https://scholar.google.com/citations?user=jtnM0c8AAAAJ&hl=en">Christian Laugier</a>
+          
+              <br>
+              <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2019, Workshop on Autonomous Driving </em>
+              <br>
+              <a href="https://hal.inria.fr/hal-02156555">pdf</a>
+              /
+              <a href="https://github.com/anshulpaigwar/Attentional-PointNet">code</a>
+              /
+              <a href="https://drive.google.com/file/d/1q2sOJBA6nBhDnkVPV5iiiTnuKpEAtM70/view?usp=sharing">poster</a>
+              
+              <p>We extend the theory of visual attention mechanisms to 3D point clouds and introduce a new recurrent 3D Localization
+              Network module. Rather than processing the whole point cloud, the network learns where to look (finding regions of
+              interest), which significantly reduces the number of points to be processed and inference time.</p>
+            </td>
+          </tr>
+
+
+
+
 
 
 
@@ -164,7 +269,7 @@
               <strong>Anshul Paigwar</strong>,
               <a href="https://khushdeep-singh.github.io/khushdeep.io/">Khushdeep Singh Mann</a>,
               <a href="https://sites.google.com/site/arenzaglia/">Alessandro Renzaglia</a>,
-              <a href="https://scholar.google.com/citations?user=jtnM0c8AAAAJ&hl=en">Christian Laugier</a>,
+              <a href="https://scholar.google.com/citations?user=jtnM0c8AAAAJ&hl=en">Christian Laugier</a>
 
               <br>
               <em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2022, Philadelphia, United States.
@@ -182,6 +287,187 @@
           </tr>
 
 
+
+
+          <tr onmouseout="cvprw21_stop()" onmouseover="cvprw21_start()">
+            <td style="padding:20px;width:30%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='cvprw21_video'><video width=100% height=100% muted autoplay loop>
+                    <source src="images/cvprw21.png" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video></div>
+                <div class="two" id='cvprw21_still'><img src='images/cvprw21.png' width=100%></div>
+          
+              </div>
+              <script type="text/javascript">
+                function cvprw21_start() {
+                  document.getElementById('cvprw21_video').style.opacity = "1";
+                  document.getElementById('cvprw21_still').style.opacity = "0";
+                }
+
+                function cvprw21_stop() {
+                  document.getElementById('cvprw21_video').style.opacity = "0";
+                  document.getElementById('cvprw21_still').style.opacity = "1";
+                }
+                cvprw21_stop()
+              </script>
+            </td>
+          
+          
+            <td style="padding:20px;width:70%;vertical-align:middle">
+              <a href="https://hal.inria.fr/hal-03368215/">
+                <papertitle>STADIE-Net: Stagewise Disparity Estimation from Stereo Event-based Cameras
+                </papertitle>
+              </a>
+              <br>
+              <a href="https://scholar.google.com/citations?user=Q8aj04wAAAAJ&hl=en">Abhishek Tomy</a>,
+              <strong>Anshul Paigwar</strong>,
+              <!-- <a href="https://khushdeep-singh.github.io/khushdeep.io/">Khushdeep Singh Mann</a>, -->
+              <a href="https://sites.google.com/site/arenzaglia/">Alessandro Renzaglia</a>,
+              <a href="https://scholar.google.com/citations?user=jtnM0c8AAAAJ&hl=en">Christian Laugier</a>
+          
+              <br>
+              <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2021, Workshop on Event-based Vision 
+              </em>
+              <br>
+              <a href="https://hal.inria.fr/hal-03368215/">pdf</a>
+              /
+              <a href="https://github.com/abhishek1411/event-rgb-fusion">code</a>
+              
+              <!-- <a href="https://www.youtube.com/watch?v=2nrqhiiXJwY">results video</a> -->
+              <p></p>
+              <p>STADIE-Net takes advantage of stagewise refinement and prediction of disparity using events from 2
+              neuromorphic cameras in a stereo setup. The method utilizes voxel grid representation for events as input and proposes a
+              4 stage network going from coarse to finer disparity prediction.</p>
+            </td>
+          </tr>
+
+
+
+          <tr onmouseout="IV22_stop()" onmouseover="IV22_start()">
+            <td style="padding:20px;width:30%;vertical-align:middle">
+              <div id='IV22_anim' class='hidden'>
+                <img src="images/IV22_anim.gif" width=100%></a>
+              </div>
+              <div id='IV22_still'><img src="images/IV22_still.gif" width=100%></div>
+              <script type="text/javascript">
+                function IV22_start() {
+                  document.getElementById('IV22_anim').style.display = 'inline';
+                  document.getElementById('IV22_still').style.display = 'none';
+                }
+
+                function IV22_stop() {
+                  document.getElementById('IV22_anim').style.display = 'none';
+                  document.getElementById('IV22_still').style.display = 'inline';
+                }
+                IV22_stop()
+              </script>
+            </td>
+          
+            <td style="padding:20px;width:70%;vertical-align:middle">
+              <!-- <a href="https://hal.inria.fr/hal-03368215/"> -->
+                <papertitle>Predicting Future Occupancy Grids in Dynamic Environment with Spatio-Temporal Learning
+                </papertitle>
+              <!-- </a> -->
+              <br>
+              <a href="https://khushdeep-singh.github.io/khushdeep.io/">Khushdeep Singh Mann</a>,
+              <a href="https://scholar.google.com/citations?user=Q8aj04wAAAAJ&hl=en">Abhishek Tomy</a>,
+              <strong>Anshul Paigwar</strong>,
+              <a href="https://sites.google.com/site/arenzaglia/">Alessandro Renzaglia</a>,
+              <a href="https://scholar.google.com/citations?user=jtnM0c8AAAAJ&hl=en">Christian Laugier</a>
+          
+              <br>
+              ** Submitted to <em>IEEE Intelligent Vehicles Symposium (IV), 2022 </em>
+              <br>
+              <!-- <a href="https://hal.inria.fr/hal-03368215/">pdf</a>
+              /
+              <a href="https://github.com/abhishek1411/event-rgb-fusion">code</a>
+           -->
+              <!-- <a href="https://www.youtube.com/watch?v=2nrqhiiXJwY">results video</a> -->
+              <p></p>
+              <p> We propose a spatio-temporal prediction network pipeline that takes the past information from the environment and
+              semantic labels separately to predict occupancy for a longer horizon of 3 seconds and in a relatively complex environment.</p>
+            </td>
+          </tr>
+
+
+
+
+          <td style="padding:20px;width:30%;vertical-align:middle">
+              <img src="images/gridtrack.png" width=100%></a>
+          </td>
+        
+          <td style="padding:20px;width:70%;vertical-align:middle">
+            <a href="https://hal.inria.fr/hal-03335282">
+            <papertitle>GridTrack: Detection and Tracking of Multiple Objects in Dynamic Occupancy Grids
+            </papertitle>
+            <!-- </a> -->
+            <br>
+              <a href="https://oerkent.gitlabpages.inria.fr/ozgurerkent/index.html">Özgür Erkent</a>,
+              <a href="https://www.davidsgonzalez.com/">David Sierra-Gonzalez</a>,
+              <strong>Anshul Paigwar</strong>,
+              <a href="https://scholar.google.com/citations?user=jtnM0c8AAAAJ&hl=en">Christian Laugier</a>
+        
+            <br>
+            <em>International Conference on Computer Vision Systems (ICVS), 2021 </em>
+            <br>
+            <a href="https://hal.inria.fr/hal-03335282">pdf</a>
+
+            <p> We fuse a dynamic occupancy grid map (DOGMa) with an object detector. DOGMa is obtained by applying a Bayesian filter on
+            raw sensor data. This improves the tracking of the partially observed / unobserved objects with the help of the Bayesian
+            filter on raw data.</p>
+          </td>
+
+
+
+
+          <tr onmouseout="ICARCV20_stop()" onmouseover="ICARCV20_start()">
+            <td style="padding:20px;width:30%;vertical-align:middle">
+              <div id='ICARCV20_anim' class='hidden'>
+                <img src="images/ICARCV20_anim.gif" width=100%></a>
+              </div>
+              <div id='ICARCV20_still'><img src="images/ICARCV20_still.png" width=100%></div>
+              <script type="text/javascript">
+                function ICARCV20_start() {
+                  document.getElementById('ICARCV20_anim').style.display = 'inline';
+                  document.getElementById('ICARCV20_still').style.display = 'none';
+                }
+
+                function ICARCV20_stop() {
+                  document.getElementById('ICARCV20_anim').style.display = 'none';
+                  document.getElementById('ICARCV20_still').style.display = 'inline';
+                }
+                ICARCV20_stop()
+              </script>
+            </td>
+          
+            <td style="padding:20px;width:70%;vertical-align:middle">
+              <a href="https://hal.inria.fr/hal-03044979">
+              <papertitle>Leveraging Dynamic Occupancy Grids for 3D Object Detection in Point Clouds
+              </papertitle>
+              <!-- </a> -->
+              <br>
+              <a href="https://www.davidsgonzalez.com/">David Sierra-Gonzalez</a>,
+              <strong>Anshul Paigwar</strong>,
+              <a href="https://oerkent.gitlabpages.inria.fr/ozgurerkent/index.html">Özgür Erkent</a>,
+              <a href="https://scholar.google.com/citations?user=jtnM0c8AAAAJ&hl=en">Christian Laugier</a>
+          
+              <br>
+              <em>IEEE International Conference on Control, Automation, Robotics and Vision (ICARCV), 2020 </em>
+              <br>
+                <a href="https://hal.inria.fr/hal-03044979">pdf</a>
+                /
+                <a href="https://github.com/d451gon/kitti_dogma_dataset">code</a>
+                /
+                <a href="https://archive.org/details/kitti_dogma_dataset">dataset</a>
+                    
+              <!-- <a href="https://www.youtube.com/watch?v=2nrqhiiXJwY">results video</a> -->
+              <p></p>
+              <p> we use dynamic occupancy grid maps to exploit any dynamic information from the driving sequences for 3D object detection.
+                Our results show that having access to the environment dynamics improves by 27% the ability of the detection algorithm to predict the orientation of
+              smaller obstacles such as pedestrians.</p>
+            </td>
+          </tr>
 
 
 
@@ -3081,7 +3367,7 @@ Under an Unknown Illumination</papertitle>
             <td style="padding:0px">
               <br>
               <p style="text-align:right;font-size:small;">
-                This website was forked from <a href="https://github.com/jonbarron/jonbarron_website">source code</a>,
+                This website was forked from <a href="https://github.com/jonbarron/jonbarron_website">source code</a>
                 <!-- just add a link back to my website.
                 <strong>Do not</strong> scrape the HTML from the deployed instance of this website at http://jonbarron.info,
                 as it includes analytics tags that you do not want on your own website &mdash; use the github code instead.
