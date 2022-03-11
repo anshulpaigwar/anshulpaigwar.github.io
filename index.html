@@ -963,8 +963,105 @@
           <tbody>
         
 
-            <!-- Add something here -->
-        
+
+            <tr onmouseout="PW_Conv_stop()" onmouseover="PW_Conv_start()">
+              <td style="padding:20px;width:30%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='PW-Conv_video'><video width=100% height=100% muted autoplay loop>
+                      <source src="images/PW-Conv_video.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video></div>
+                  <div id='PW-Conv_still'><img src='images/PW-Conv_still.png' width=100%></div>
+                </div>
+                <script type="text/javascript">
+                  function PW_Conv_start() {
+                    document.getElementById('PW-Conv_video').style.display = 'inline';
+                    document.getElementById('PW-Conv_still').style.display = 'none';
+                  }
+  
+                  function PW_Conv_stop() {
+                    document.getElementById('PW-Conv_video').style.display = 'none';
+                    document.getElementById('PW-Conv_still').style.display = 'inline';
+                  }
+                  PW_Conv_stop()
+                </script>
+              </td>
+            
+            
+              <td style="padding:20px;width:70%;vertical-align:middle">
+
+                  <papertitle> PyTorch implementation of Pointwise Convolutional Neural Networks
+                  </papertitle>
+ 
+                <br>
+                <a href="https://github.com/anshulpaigwar/Pointwise-Convolutional-Neural-Network">code</a>
+                /
+                <a href="https://arxiv.org/pdf/1712.05245.pdf">original paper</a>
+                /
+                <a href="https://youtu.be/Q00o88Q_08w">video</a>
+            
+                <p> A new pointwise convolution operator that can be applied at each point of a 3D point cloud. 
+                  can yield competitive accuracy in both semantic segmentation and object recognition task.
+                </p>
+              </td>
+            </tr>
+
+
+
+
+            <tr onmouseout="datmo_stop()" onmouseover="datmo_start()">
+              <td style="padding:20px;width:30%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='datmo_video'><video width=100% height=100% muted autoplay loop>
+                      <source src="images/datmo_video.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video></div>
+                  <div id='datmo_still'><img src='images/datmo_still.png' width=100%></div>
+                </div>
+                <script type="text/javascript">
+                  function datmo_start() {
+                    document.getElementById('datmo_video').style.display = 'inline';
+                    document.getElementById('datmo_still').style.display = 'none';
+                  }
+  
+                  function datmo_stop() {
+                    document.getElementById('datmo_video').style.display = 'none';
+                    document.getElementById('datmo_still').style.display = 'inline';
+                  }
+                  datmo_stop()
+                </script>
+              </td>
+            
+            
+              <td style="padding:20px;width:70%;vertical-align:middle">
+
+                  <papertitle> Dynamic object detection and tracking in point clouds
+                  </papertitle>
+                  <br>
+                  <strong>Anshul Paigwar</strong>,
+                  <a href="https://www.linkedin.com/in/zubin-priyansh/?originalSubdomain=in">Zubin Priyansh</a>,
+                  <a href="https://www.linkedin.com/in/pradyotkvn/?originalSubdomain=in">Pradyot KVN</a>
+                  <br>
+                  <em>Internship at Hitech Robotics systems, Gurgaon, India </em>
+                  <br>
+                <a href="https://github.com/anshulpaigwar/dynamic-object-tracking-pointcloud">code</a>
+                /
+                <a href="https://anshulpaigwar.github.io/dynamic-object-tracking-pointcloud/classdatmo_1_1cloud__segmentation.html">documentation</a>
+                /
+                <a href="https://drive.google.com/open?id=0B1AaW7rsinFEOEZ4QVdXSWFDX1U">video</a>
+            
+                <p> We proposed a new framework for real-time Detection and Tracking for Moving Objects (DATMO) in 3D point clouds.
+                  We tested our algorithm with the point cloud from Intel Realsense Camera and Velodyne-16 in indoor environment.
+                </p>
+              </td>
+            </tr>
+
+
+
+
+
+
+
           </tbody>
         </table>
 
