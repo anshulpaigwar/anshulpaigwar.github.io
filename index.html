@@ -261,6 +261,143 @@
 
 
 
+              <!-- PAPER ITSC 2022 -->
+              <!-- <tr onmouseout="itsc_2022_stop()" onmouseover="itsc_2022_start()">
+                <td style="padding:20px;width:30%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='itsc_2022_image'><video width=100% height=100% muted autoplay loop>
+                        <source src="images/ITSC22_video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video></div>
+                    <img src='images/ITSC22_still.png' width=100%>
+                  </div>
+                  <script type="text/javascript">
+                    function itsc_2022_start() {
+                      document.getElementById('itsc_2022_image').style.opacity = "1";
+                    }
+
+                    function itsc_2022_stop() {
+                      document.getElementById('itsc_2022_image').style.opacity = "0";
+                    }
+                    itsc_2022_stop()
+                  </script>
+                </td> -->
+
+
+
+              <tr onmouseout="itsc_2022_stop()" onmouseover="itsc_2022_start()">
+                <td style="padding:20px;width:30%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='itsc_2022_video'><video width=100% muted autoplay loop>
+                        <source src="images/ITSC22_video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video></div>
+                    <div id='itsc_2022_still'><img src='images/ITSC22_still.png' width=100%></div>
+                  </div>
+                  <script type="text/javascript">
+                    function itsc_2022_start() {
+                      document.getElementById('itsc_2022_video').style.display = 'inline';
+                      document.getElementById('itsc_2022_still').style.display = 'none';
+                    }
+
+                    function itsc_2022_stop() {
+                      document.getElementById('itsc_2022_video').style.display = 'none';
+                      document.getElementById('itsc_2022_still').style.display = 'inline';
+                    }
+                    itsc_2022_stop()
+                  </script>
+                </td>
+
+
+
+                <td
+                  style="padding-left:20px;padding-right: 20px; padding-top:10px;padding-bottom: 10px;width:75%;vertical-align:middle">
+                  <a href="https://github.com/d451gon/MULTILANE">
+                    <papertitle>MultiLane: Lane intention prediction and sensible lane-oriented trajectory forecasting
+                      on centerline
+                      graphs</papertitle>
+                  </a>
+                  <br>
+                  <strong>David Sierra-Gonzalez</strong>,
+                  <a href="https://anshulpaigwar.github.io/">Anshul Paigwar</a>,
+                  <a href="https://scholar.google.com/citations?user=5QMAbisAAAAJ&hl=en">Ozgur Erkent</a>,
+                  <a href="https://scholar.google.com/citations?user=jtnM0c8AAAAJ&hl=en">Christian Laugier</a>
+                  <br>
+                  <em>ITSC</em>, 2022. <em>To appear.</em>
+                  <br>
+                  <a href="https://github.com/d451gon/MULTILANE">code</a>
+                  <p></p>
+                  <p>A Graph Neural Network is used to predict the centerline that the target intends to follow. Based
+                    on that, we
+                    predict a distribution over potential endpoints, and multiple lane-oriented trajectory realizations.
+                  </p>
+                </td>
+              </tr>
+              <!-- END PAPER ITSC 2022 -->
+
+
+
+
+
+
+              <!-- PAPER ICARCV 2022 -->
+
+              <tr onmouseout="icarcv_2022_stop()" onmouseover="icarcv_2022_start()">
+                <td style="padding:20px;width:30%;vertical-align:middle">
+                  <div class="one">
+
+                    <div class="two" id='icarcv_2022_video'><video width=100% muted autoplay loop>
+                        <source src="images/ICARCV22_video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video></div>
+
+                    <div id='icarcv_2022_still'><img src='images/ICARCV22_still.png' width=100%></div>
+                  </div>
+                  <script type="text/javascript">
+                    function icarcv_2022_start() {
+                      document.getElementById('icarcv_2022_video').style.display = 'inline';
+                      document.getElementById('icarcv_2022_still').style.display = 'none';
+                    }
+
+                    function icarcv_2022_stop() {
+                      document.getElementById('icarcv_2022_video').style.display = 'none';
+                      document.getElementById('icarcv_2022_still').style.display = 'inline';
+                    }
+                    icarcv_2022_stop()
+                  </script>
+                </td>
+
+
+
+
+                <td
+                  style="padding-left:20px;padding-right: 20px; padding-top:10px;padding-bottom: 10px;width:75%;vertical-align:middle">
+                  <a href="">
+                    <papertitle>TransFuseGrid: Transformer-based Lidar-RGB fusion for semantic grid prediction
+                    </papertitle>
+                  </a>
+                  <br>
+                  <a href="https://github.com/gsg213">Gustavo Salazar-Gomez</a>,
+                  <a href="https://anshulpaigwar.github.io/">Anshul Paigwar</a>,
+                  <a href="https://scholar.google.com/citations?user=6yh4f4YAAAAJ&hl=en">Wenqian Liu</a>,
+                  <a href="https://scholar.google.com/citations?user=5QMAbisAAAAJ&hl=en">Ozgur Erkent</a>,
+                  <a href="https://scholar.google.com/citations?user=hM_mm8MAAAAJ&hl=en">Manuel Diaz</a>,
+                  <strong>David Sierra-Gonzalez</strong>,
+                  <a href="https://scholar.google.com/citations?user=jtnM0c8AAAAJ&hl=en">Christian Laugier</a>
+                  <br>
+                  <em> To appear.</em><!-- ICARCV</em>, 2022 -->
+                  <br>
+                  <p></p>
+                  <p>Architecture that fuses multi-camera and LiDAR data at different scales to produce bird's eye view
+                    semantic grids
+                    of the environment.</p>
+                </td>
+              </tr>
+              <!-- END PAPER ICARCV 2022 -->
+
+
+
+              <!-- START PAPER ICCV21 2022 -->
               <tr onmouseout="fpp_stop()" onmouseover="fpp_start()">
                 <td style="padding:20px;width:30%;vertical-align:middle">
                   <div class="one">
@@ -308,14 +445,14 @@
                   /
                   <a href="https://www.youtube.com/watch?v=mJyKwhOOqxU">results video</a>
                   <p></p>
-                  <p>We leverage the mature field of 2D object detection to reduce the search space in the 3D space.
-                    Then, we use the Pillar
-                    Feature Encoding network for object localization in the reduced point cloud. At the time of
-                    submission F-Pointpillars <strong>ranked
-                      among top 5 </strong> approches for BEV pedestrian detection on KITTI Dataset.</p>
+                  <p>We leverage 2D object detection to reduce the search space in the 3D.
+                    Then use the Pillar Feature Encoding network for object localization in the reduced point cloud. At
+                    the time of
+                    submission F-Pointpillars <strong>ranked among top 5 </strong> approches for BEV pedestrian
+                    detection on KITTI Dataset.</p>
                 </td>
               </tr>
-
+              <!-- END OF PAPER ICCV21 2022 -->
 
 
 
@@ -443,7 +580,7 @@
               <tr onmouseout="icra2022_stop()" onmouseover="icra2022_start()">
                 <td style="padding:20px;width:30%;vertical-align:middle">
                   <div class="one">
-                    <div class="two" id='icra22_video'><video width=100% height=100% muted autoplay loop>
+                    <div class="two" id='icra22_video'><video width=100% muted autoplay loop>
                         <source src="images/ICRA22_video.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                       </video></div>
@@ -578,30 +715,31 @@
                 </td>
 
                 <td style="padding:20px;width:70%;vertical-align:middle">
-                  <!-- <a href="https://hal.inria.fr/hal-03368215/"> -->
-                  <papertitle>Predicting Future Occupancy Grids in Dynamic Environment with Spatio-Temporal Learning
-                  </papertitle>
-                  <!-- </a> -->
-                  <br>
-                  <a href="https://khushdeep-singh.github.io/khushdeep.io/">Khushdeep Singh Mann</a>,
-                  <a href="https://scholar.google.com/citations?user=Q8aj04wAAAAJ&hl=en">Abhishek Tomy</a>,
-                  <strong>Anshul Paigwar</strong>,
-                  <a href="https://sites.google.com/site/arenzaglia/">Alessandro Renzaglia</a>,
-                  <a href="https://scholar.google.com/citations?user=jtnM0c8AAAAJ&hl=en">Christian Laugier</a>
+                  <a href="https://arxiv.org/abs/2205.03212">
+                    <papertitle>Predicting Future Occupancy Grids in Dynamic Environment with Spatio-Temporal Learning
+                    </papertitle>
+                    <!-- </a> -->
+                    <br>
+                    <a href="https://khushdeep-singh.github.io/khushdeep.io/">Khushdeep Singh Mann</a>,
+                    <a href="https://scholar.google.com/citations?user=Q8aj04wAAAAJ&hl=en">Abhishek Tomy</a>,
+                    <strong>Anshul Paigwar</strong>,
+                    <a href="https://sites.google.com/site/arenzaglia/">Alessandro Renzaglia</a>,
+                    <a href="https://scholar.google.com/citations?user=jtnM0c8AAAAJ&hl=en">Christian Laugier</a>
 
-                  <br>
-                  ** Submitted to <em>IEEE Intelligent Vehicles Symposium (IV), 2022 </em>
-                  <br>
-                  <!-- <a href="https://hal.inria.fr/hal-03368215/">pdf</a>
-              /
-              <a href="https://github.com/abhishek1411/event-rgb-fusion">code</a>
-           -->
-                  <!-- <a href="https://www.youtube.com/watch?v=2nrqhiiXJwY">results video</a> -->
-                  <p></p>
-                  <p> We propose a spatio-temporal prediction network pipeline that takes the past information from the
-                    environment and
-                    semantic labels separately to predict occupancy for a longer horizon of 3 seconds and in a
-                    relatively complex environment.</p>
+                    <br>
+                    <em>IEEE Intelligent Vehicles Symposium (IV), 2022, Aachen, Germany </em>
+                    <br>
+                    <a href="https://arxiv.org/abs/2205.03212">pdf</a>
+
+                    <!-- <a href="https://github.com/abhishek1411/event-rgb-fusion">code</a> -->
+
+                    <!-- <a href="https://www.youtube.com/watch?v=2nrqhiiXJwY">results video</a> -->
+                    <p></p>
+                    <p> We propose a spatio-temporal prediction network pipeline that takes the past information from
+                      the
+                      environment and
+                      semantic labels separately to predict occupancy for a longer horizon of 3 seconds and in a
+                      relatively complex environment.</p>
                 </td>
               </tr>
 
@@ -733,34 +871,52 @@
 
 
 
-              <td style="padding:20px;width:30%;vertical-align:middle">
-                <div class="one">
-                  <img src="images/gridtrack.png" width=100%></a>
-                </div>
-              </td>
+              <tr onmouseout="ICCVS21_stop()" onmouseover="ICCVS21_start()">
+                <td style="padding:20px;width:30%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='ICCVS21_video'><video width=100% muted autoplay loop>
+                        <source src="images/ICCVS21_video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video></div>
+                    <div id='ICCVS21_still'><img src='images/ICCVS21_still.png' width=100%></div>
+                  </div>
+                  <script type="text/javascript">
+                    function ICCVS21_start() {
+                      document.getElementById('ICCVS21_video').style.display = 'inline';
+                      document.getElementById('ICCVS21_still').style.display = 'none';
+                    }
 
-              <td style="padding:20px;width:70%;vertical-align:middle">
-                <a href="https://hal.inria.fr/hal-03335282">
-                  <papertitle>GridTrack: Detection and Tracking of Multiple Objects in Dynamic Occupancy Grids
-                  </papertitle>
-                  <!-- </a> -->
-                  <br>
-                  <a href="https://oerkent.gitlabpages.inria.fr/ozgurerkent/index.html">Özgür Erkent</a>,
-                  <a href="https://www.davidsgonzalez.com/">David Sierra-Gonzalez</a>,
-                  <strong>Anshul Paigwar</strong>,
-                  <a href="https://scholar.google.com/citations?user=jtnM0c8AAAAJ&hl=en">Christian Laugier</a>
+                    function ICCVS21_stop() {
+                      document.getElementById('ICCVS21_video').style.display = 'none';
+                      document.getElementById('ICCVS21_still').style.display = 'inline';
+                    }
+                    ICCVS21_stop()
+                  </script>
+                </td>
 
-                  <br>
-                  <em>International Conference on Computer Vision Systems (ICVS), 2021 </em>
-                  <br>
-                  <a href="https://hal.inria.fr/hal-03335282">pdf</a>
+                <td style="padding:20px;width:70%;vertical-align:middle">
+                  <a href="https://hal.inria.fr/hal-03335282">
+                    <papertitle>GridTrack: Detection and Tracking of Multiple Objects in Dynamic Occupancy Grids
+                    </papertitle>
+                    <!-- </a> -->
+                    <br>
+                    <a href="https://oerkent.gitlabpages.inria.fr/ozgurerkent/index.html">Özgür Erkent</a>,
+                    <a href="https://www.davidsgonzalez.com/">David Sierra-Gonzalez</a>,
+                    <strong>Anshul Paigwar</strong>,
+                    <a href="https://scholar.google.com/citations?user=jtnM0c8AAAAJ&hl=en">Christian Laugier</a>
 
-                  <p> We fuse a dynamic occupancy grid map (DOGMa) with an object detector. DOGMa is obtained by
-                    applying a Bayesian filter on
-                    raw sensor data. This improves the tracking of the partially observed / unobserved objects with the
-                    help of the Bayesian
-                    filter on raw data.</p>
-              </td>
+                    <br>
+                    <em>International Conference on Computer Vision Systems (ICVS), 2021 </em>
+                    <br>
+                    <a href="https://hal.inria.fr/hal-03335282">pdf</a>
+
+                    <p> We fuse a dynamic occupancy grid map (DOGMa) with an object detector. DOGMa is obtained by
+                      applying a Bayesian filter on
+                      raw sensor data. This improves the tracking of the partially observed / unobserved objects with
+                      the
+                      help of the Bayesian
+                      filter on raw data.</p>
+                </td>
 
 
 
@@ -768,9 +924,12 @@
               <tr onmouseout="ICARCV20_stop()" onmouseover="ICARCV20_start()">
                 <td style="padding:20px;width:30%;vertical-align:middle">
                   <div class="one">
-                    <div id='ICARCV20_anim' class='two'>
-                      <img src="images/ICARCV20_anim.gif" width=100%></a>
-                    </div>
+                    <!-- <div id='ICARCV20_anim' class='two'>
+                      <img src="images/ICARCV20_anim.gif" width=100%></a> -->
+                    <div class="two" id='ICARCV20_anim'><video width=100% height=100% muted autoplay loop>
+                        <source src="images/ICARCV20_video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video></div>
                     <div id='ICARCV20_still'><img src="images/ICARCV20_still.png" width=100%></div>
                   </div>
                   <script type="text/javascript">
